@@ -20,6 +20,7 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
+  font-weight: 500;
   background-color: var(--white);
   min-height: 100vh;
 }
@@ -149,6 +150,32 @@ form.data-card {
   flex-flow: column wrap;
   outline: none;
 }
+
+.data-card-row label {
+  font-size: 0.8rem;
+  color: var(--very-dark-violet);
+}
+
 form.data-card input {
   padding: 1em;
+  font-size: 1.05rem;
+}
+
+.data-card-coll-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.data-card-coll {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.data-card-coll:first-child {
+  grid-column: 1 / 2;
+}
+
+.data-card-exp {
+  width: 3ch;
+  box-sizing: content-box;
 }
