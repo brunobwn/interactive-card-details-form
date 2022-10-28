@@ -168,7 +168,7 @@ form.data-card fieldset {
 }
 
 form.data-card input {
-  padding: 0.5em;
+  padding: 0.8em;
   font-size: 1.05rem;
   border-radius: 0.5em;
   border: 1px solid var(--light-grayish-violet);
