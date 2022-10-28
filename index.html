@@ -28,7 +28,9 @@
         <div class="preview-card front">
           <div class="preview-card-row preview-card-heading">
             <div class="preview-card-logo"></div>
-            <div class="preview-card-flag">VISA</div>
+            <div class="preview-card-flag">
+              <img src="images/mastercard.svg" alt="Credit card logo" />
+            </div>
           </div>
           <div class="preview-card-row preview-card-number">
             <p>0000 0000 0000 0000</p>
@@ -61,25 +63,26 @@
             required />
         </fieldset>
         <div class="data-card-coll-container">
-          <fieldset class="data-card-coll">
+          <fieldset class="data-card-col data-card-row">
             <label for="card-expiration-mm">Exp. Date (MM/YY)</label>
-            <input
-              type="tel"
-              id="card-expiration-mm"
-              placeholder="MM"
-              class="data-card-exp"
-              maxlength="2"
-              required />
-            <input
-              type="tel"
-              id="card-expiration-yy"
-              placeholder="YY"
-              class="data-card-exp"
-              maxlength="2"
-              required />
+            <div>
+              <input
+                type="tel"
+                id="card-expiration-mm"
+                placeholder="MM"
+                class="data-card-exp"
+                maxlength="2"
+                required />
+              <input
+                type="tel"
+                id="card-expiration-yy"
+                placeholder="YY"
+                class="data-card-exp"
+                maxlength="2"
+                required />
+            </div>
           </fieldset>
-
-          <fieldset class="data-card-coll">
+          <fieldset class="data-card-col data-card-row">
             <label for="card-cvc">CVC</label>
             <input
               type="tel"

@@ -88,6 +88,8 @@ body {
 }
 
 .preview-card-heading {
+  display: flex;
+  align-items: center;
   margin-bottom: auto;
 }
 
@@ -110,9 +112,12 @@ body {
 }
 
 .preview-card-flag {
-  width: 2rem;
+  width: 2.5em;
   display: inline-block;
   align-self: flex-start;
+}
+.preview-card-flag img {
+  width: 100%;
 }
 
 .preview-card-number {
@@ -149,6 +154,7 @@ form.data-card {
   display: flex;
   flex-flow: column wrap;
   outline: none;
+  gap: 0.5em;
 }
 
 .data-card-row label {
@@ -156,26 +162,45 @@ form.data-card {
   color: var(--very-dark-violet);
 }
 
+form.data-card fieldset {
+  border: none;
+}
+
 form.data-card input {
-  padding: 1em;
+  padding: 0.5em;
   font-size: 1.05rem;
+  border-radius: 0.5em;
+  border: 1px solid var(--light-grayish-violet);
+  color: var(--dark-grayish-violet);
+}
+
+form.data-card .data-btn {
+  margin-top: 1em;
+  padding: 0.8em;
+  font-size: 1.05rem;
+  border-radius: 0.5em;
+  border: 1px solid var(--light-grayish-violet);
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  cursor: pointer;
 }
 
 .data-card-coll-container {
   display: flex;
-  flex-wrap: nowrap;
+  gap: 0.5em;
 }
 
-.data-card-coll {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.data-card-col {
+  width: 50%;
+  /* display: inline-block; */
 }
-.data-card-coll:first-child {
-  grid-column: 1 / 2;
+.data-card-col > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
 .data-card-exp {
-  width: 3ch;
-  box-sizing: content-box;
+  width: 50%;
+  /* box-sizing: content-box; */
 }
